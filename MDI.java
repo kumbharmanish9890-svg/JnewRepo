@@ -3,14 +3,14 @@ import javax.swing.*;
 import java.awt.event.*;
 import javax.swing.event.*;
 
-class MDI extends JFrame implements ActionListener
+public class MDI extends JFrame implements ActionListener
 {
     JMenuBar mbr = new JMenuBar();
     JMenu mnuBill;
     JDesktopPane desktop = new JDesktopPane();
     JMenuItem mnuItmBill1;
 
-    public MDI()
+     MDI()
     {
         Toolkit kit = Toolkit.getDefaultToolkit() ;
         Dimension ss = kit.getScreenSize();
