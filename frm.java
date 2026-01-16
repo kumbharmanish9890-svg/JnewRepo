@@ -12,21 +12,21 @@ public class frm extends JFrame implements ActionListener
     JButton btnLogin;
     public frm()
     {
-        setSize(700,500);
+        setSize(400,300);
         setTitle("LOGIN");
         setLayout(null);
 
         LoginPanel = new JPanel();
-        LoginPanel.setBounds(100,50,500,400);
+        LoginPanel.setBounds(20,20,350,230);
         LoginPanel.setBorder(BorderFactory.createTitledBorder("LOGIN"));
         add(LoginPanel);
-        setLayout(null);
+        LoginPanel.setLayout(null);
 
         lbUser = new JLabel("Username");
         lbUser.setBounds(20,20,120,25);
         LoginPanel.add(lbUser);
 
-     /*   txUser = new JTextField();
+       txUser = new JTextField();
         txUser.setBounds(150,20,120,25);
         LoginPanel.add(txUser);
 
@@ -37,9 +37,9 @@ public class frm extends JFrame implements ActionListener
         txPass = new JTextField();
         txPass.setBounds(150,70,120,25);
         LoginPanel.add(txPass);
-		*/
+		
         btnLogin = new JButton("LOGIN");
-        btnLogin.setBounds(150,300,100,25);
+        btnLogin.setBounds(120,180,100,25);
         LoginPanel.add(btnLogin);
         btnLogin.addActionListener(this);
 
