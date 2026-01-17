@@ -22,19 +22,25 @@ public class MDI extends JFrame implements ActionListener
 
         mnuBill = new JMenu("Bills");
         mbr.add(mnuBill);
-        mnuBill.addActionListener(this);
+        //mnuBill.addActionListener(this);
 
         mnuItmBill1 = new JMenuItem("ShortBill");
         mnuBill.add(mnuItmBill1);
         mnuItmBill1.addActionListener(this);
 
         desktop = new JDesktopPane();
-        desktop.setBounds(0,0,ss.width,ss.height);
+        desktop.setBounds(0,30,ss.width,ss.height);
         add(desktop);
 
     }
     public void actionPerformed(ActionEvent e)
     {
+        if(e.getSource() == mnuItmBill1)
+        {
+            frmPurchase obj = new frmPurchase();
+            desktop.add(obj);
+            obj.show(); 
+        }
 
     }
 
