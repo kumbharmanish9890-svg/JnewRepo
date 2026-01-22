@@ -14,7 +14,7 @@ public class MDI extends JFrame implements ActionListener
     {
         Toolkit kit = Toolkit.getDefaultToolkit() ;
         Dimension ss = kit.getScreenSize();
-        
+
         setSize(ss.width,ss.height);
         setLayout(null);
 
@@ -38,8 +38,9 @@ public class MDI extends JFrame implements ActionListener
         if(e.getSource() == mnuItmBill1)
         {
             frmPurchase obj = new frmPurchase();
-            desktop.add(obj);
-            obj.show(); 
+            obj.show();
+
+            //hide.this;
         }
 
     }
