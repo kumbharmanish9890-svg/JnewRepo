@@ -10,6 +10,8 @@ public class MDI extends JFrame implements ActionListener
     JDesktopPane desktop = new JDesktopPane();
     JMenuItem mnuItmBill1;
 
+
+
      MDI()
     {
         Toolkit kit = Toolkit.getDefaultToolkit() ;
